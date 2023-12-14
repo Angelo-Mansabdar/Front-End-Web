@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+}
+
+body{
+  background-color: #4D4847;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #8baaad;
+  height: 12vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 3000px;
+}
+
+.naam-header {
+  color: white;
+  font-size: 20pt;
+}
+
+#achternaam-margin {
+  margin-left: 25px;
+}
+
+#divider-header {
+  background-color: white;
+  height: 8vh;
+  width: 0.15vw;
+  margin-left: 70px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+  color: white;
+  font-size: 20pt;
+  gap: 100px;
+}
+
+/**zorgt voor lijntje**/
+.nav-text::after {
+  display: block;
+  height: 0.25vh;
+  width: 0vw;
+  background-color: white;
+  content: " ";
+  transition: all 0.4s;
+}
+.nav-text:hover::after {
+  width: 100%;
+  transition: all 0.4s;
+  /** 100% laten zien aan niek**/
+}
+/**zorgt voor lijntje**/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+header img{
+    display: none;
+}
+/**einde header**/
+
+/** note for self
+    maak responsive waardes **/
+
+
+
+/**main**/
+
+#welkom-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  gap: 6vw;
+  width: 90vw;
+  height: 50vh;
+  margin-bottom: 12vh;
+
+  
+}
+
+#welkom-align-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 100px;
+  font-weight: 500;
+}
+
+#welkom-header{
+  color: white;
+  font-size: 36pt;
+  display: flex;
+  justify-content: center;
+}
+
+#welkom-textblok{
+  background: rgb(28,55,56);
+  background: linear-gradient(126deg, rgba(28,55,56,1) 0%, rgba(139,170,173,1) 100%); 
+  border-radius: 25px;
+  height: 40vh;
+  width: 50vw;
+}
+
+.basic-text{
+  padding: 20px;
+  color:white;
+  line-height: 25px;
+}
+
+#welkom-afbeelding{
+  height: 60vh;
+}
+
+#angelo{
+  width: 100%;
+  height: 100%;
+  border-radius: 6%;
+}
+
+/** later js flip **/
+#yellow-blocks{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8vw;
+}
+
+.yellow{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255,200,87);
+  background: linear-gradient(145deg, rgba(255,200,87,1) 0%, rgba(255,167,87,1) 44%); 
+  width: 20vw;
+  height: 40vh;
+  border-radius: 6%;
+}
+/** later js flip **/
+
+#fontys-stijl{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 12vh;
+  width: 80vw;
+  height: 50vh
+}
+
+#fontys-blok{
+  display: flex;
+  flex-direction: row;
+  background: rgb(28,55,56);
+  background: linear-gradient(126deg, rgba(28,55,56,1) 0%, rgba(139,170,173,1) 100%);
+  width: 76vw;
+  height: 50vh;
+  border-radius: 25px;
+}
+
+#fontys-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 45%;
+}
+
+
+
+
+/**main**/
+
+
+
+      /**
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      later terugkomen op blok kleuren
+      gradient anders of drop shadow/ border?
+      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      **/
+
+
+
+/** media queries**/
+   /* @media screen and (max-width: 1200px) {
+
+        nav{
+            font-size: 18pt;
+        }
+    
+        .naam-header{
+            font-size: 18pt;
+        }
+
+    
+    }
+    */
+
+    @media screen and (max-width: 1000px){
+
+        nav{
+            font-size: 16pt;
+            display: none;
+        }
+    
+        .naam-header{
+            font-size: 20pt;
+        }
+        
+        header img{
+            display: block;
+            scale: 220%;
+        }
+
+        #divider-header{
+            width: 0.20vw;
+        }
+
+        #welkom-wrapper{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            flex-direction: column;
+            height: 60vh;
+            gap: 12%;
+        }
+
+        #welkom-textblok{
+          order: 2;
+          min-height: 40vh;
+        }
+
+        #welkom-header{
+          font-size: 24pt;
+          margin-bottom: 10px;
+        }
+
+        #welkom-text{
+          font-size: 10pt;
+        }
+        
+        #welkom-afbeelding{
+          order: 1;
+          height: 50vh;
+          width: 50vw;
+        }
+
+        #angelo{
+          width: 100%;
+          height: 100%;
+          border-radius: 6%;
+        }
+
+
+
+
+        #yellow-blocks{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .yellow{
+          width: 40vw;
+          height: 20vh;
+        }
+    }
+    /* fixen dat wlekom blok niet tevoorschijn komt */
+    /* componenten losmaken? */
+
+    /** media queries**/
