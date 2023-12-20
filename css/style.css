@@ -4,6 +4,10 @@
 
 }
 
+section{
+  width: 100vw;
+}
+
 body{
   background-color: #4D4847;
 }
@@ -187,6 +191,33 @@ header img{
   width: 45%;
 }
 
+
+#html-img{
+  scale: 70%;
+}
+
+
+#kleine-nav-onder{
+  display: flex;
+  flex-direction: row;
+}
+
+
+#yellow-bars-container{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  background-color: blue;
+}
+
+.yellow-bars{
+  background: rgb(255,200,87);
+  background: linear-gradient(145deg, rgba(255,200,87,1) 0%, rgba(255,167,87,1) 44%); 
+  height: ;
+  width: ;
+}
+
+.
 
 
 
