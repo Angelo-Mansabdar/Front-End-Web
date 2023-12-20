@@ -1,15 +1,14 @@
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
-
 }
 
-section{
+section {
   width: 100vw;
 }
 
-body{
-  background-color: #4D4847;
+body {
+  background-color: grey;
 }
 
 header {
@@ -24,7 +23,6 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  height: 3000px;
 }
 
 .naam-header {
@@ -73,20 +71,17 @@ a {
   text-decoration: none;
 }
 
-
-header img{
-    display: none;
+header img {
+  display: none;
 }
 /**einde header**/
 
 /** note for self
     maak responsive waardes **/
 
-
-
 /**main**/
 
-#welkom-wrapper{
+#welkom-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -97,11 +92,9 @@ header img{
   width: 90vw;
   height: 50vh;
   margin-bottom: 12vh;
-
-  
 }
 
-#welkom-align-text{
+#welkom-align-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,39 +102,43 @@ header img{
   font-weight: 500;
 }
 
-#welkom-header{
+#welkom-header {
   color: white;
   font-size: 36pt;
   display: flex;
   justify-content: center;
 }
 
-#welkom-textblok{
-  background: rgb(28,55,56);
-  background: linear-gradient(126deg, rgba(28,55,56,1) 0%, rgba(139,170,173,1) 100%); 
+#welkom-textblok {
+  background: rgb(28, 55, 56);
+  background: linear-gradient(
+    126deg,
+    rgba(28, 55, 56, 1) 0%,
+    rgba(139, 170, 173, 1) 100%
+  );
   border-radius: 25px;
   height: 40vh;
   width: 50vw;
 }
 
-.basic-text{
+.basic-text {
   padding: 20px;
-  color:white;
+  color: white;
   line-height: 25px;
 }
 
-#welkom-afbeelding{
+#welkom-afbeelding {
   height: 60vh;
 }
 
-#angelo{
+#angelo {
   width: 100%;
   height: 100%;
   border-radius: 6%;
 }
 
 /** later js flip **/
-#yellow-blocks{
+#yellow-blocks {
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
@@ -149,41 +146,48 @@ header img{
   gap: 8vw;
 }
 
-.yellow{
-  display:flex;
+.yellow {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255,200,87);
-  background: linear-gradient(145deg, rgba(255,200,87,1) 0%, rgba(255,167,87,1) 44%); 
+  background: rgb(255, 200, 87);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 200, 87, 1) 0%,
+    rgba(255, 167, 87, 1) 44%
+  );
   width: 20vw;
   height: 40vh;
   border-radius: 6%;
 }
 /** later js flip **/
 
-#fontys-stijl{
+#fontys-stijl {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 15vh;
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-bottom: 12vh;
   width: 80vw;
-  height: 50vh
+  height: 50vh;
 }
 
-#fontys-blok{
+#fontys-blok {
   display: flex;
   flex-direction: row;
-  background: rgb(28,55,56);
-  background: linear-gradient(126deg, rgba(28,55,56,1) 0%, rgba(139,170,173,1) 100%);
+  background: rgb(28, 55, 56);
+  background: linear-gradient(
+    126deg,
+    rgba(28, 55, 56, 1) 0%,
+    rgba(139, 170, 173, 1) 100%
+  );
   width: 76vw;
   height: 50vh;
   border-radius: 25px;
 }
 
-#fontys-text{
+#fontys-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,51 +195,97 @@ header img{
   width: 45%;
 }
 
-
-#html-img{
-  scale: 70%;
+.html-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  background-image: url(../Image/HtmlCode2.png);
+  width: 38vw;
+  height: 75vh;
+  background-size: cover;
 }
 
+.html-img h1 {
+  color: white;
+  font-size: 24pt;
+}
 
-#kleine-nav-onder{
+#kleine-nav-onder {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
-
-#yellow-bars-container{
+#yellow-bars-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 50vw;
-  background-color: blue;
+  gap: 40px;
+  height: 75vh;
 }
 
-.yellow-bars{
-  background: rgb(255,200,87);
-  background: linear-gradient(145deg, rgba(255,200,87,1) 0%, rgba(255,167,87,1) 44%); 
-  height: ;
-  width: ;
+.yellow-bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 200, 87);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 200, 87, 1) 0%,
+    rgba(255, 167, 87, 1) 44%
+  );
+  height: 25vh;
+  width: 25vw;
+  border-radius: 25px;
 }
 
-.
+.yellow-bar {
+  color: white;
+  font-size: 24pt;
+}
 
+.yellow-bar::after {
+  display: block;
+  height: 0.25vh;
+  width: 0vw;
+  background-color: white;
+  content: " ";
+  transition: all 0.4s;
+}
 
+.yellow-bar:hover::after {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #8baaad;
+  height: 12vh;
+}
+
+footer img {
+}
 
 /**main**/
 
-
-
-      /**
+/**
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       later terugkomen op blok kleuren
       gradient anders of drop shadow/ border?
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       **/
 
-
-
 /** media queries**/
-   /* @media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
 
         nav{
             font-size: 18pt;
@@ -249,76 +299,77 @@ header img{
     }
     */
 
-    @media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
+  nav {
+    font-size: 16pt;
+    display: none;
+  }
 
-        nav{
-            font-size: 16pt;
-            display: none;
-        }
-    
-        .naam-header{
-            font-size: 20pt;
-        }
-        
-        header img{
-            display: block;
-            scale: 220%;
-        }
+  .naam-header {
+    font-size: 20pt;
+  }
 
-        #divider-header{
-            width: 0.20vw;
-        }
+  header img {
+    display: block;
+    scale: 220%;
+  }
 
-        #welkom-wrapper{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-            flex-direction: column;
-            height: 60vh;
-            gap: 12%;
-        }
+  header {
+    margin-bottom: 100px;
+  }
 
-        #welkom-textblok{
-          order: 2;
-          min-height: 40vh;
-        }
+  #divider-header {
+    width: 0.2vw;
+  }
 
-        #welkom-header{
-          font-size: 24pt;
-          margin-bottom: 10px;
-        }
+  #welkom-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    gap: 12%;
+  }
 
-        #welkom-text{
-          font-size: 10pt;
-        }
-        
-        #welkom-afbeelding{
-          order: 1;
-          height: 50vh;
-          width: 50vw;
-        }
+  #welkom-textblok {
+    order: 2;
+    min-height: 40vh;
+  }
 
-        #angelo{
-          width: 100%;
-          height: 100%;
-          border-radius: 6%;
-        }
+  #welkom-header {
+    font-size: 24pt;
+    margin-bottom: 10px;
+  }
 
+  #welkom-text {
+    font-size: 10pt;
+  }
 
+  #welkom-afbeelding {
+    order: 1;
+    height: 50vh;
+    width: 50vw;
+    margin-bottom: 100px;
+  }
 
+  #angelo {
+    width: 100%;
+    height: 100%;
+    border-radius: 6%;
+  }
 
-        #yellow-blocks{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        
-        .yellow{
-          width: 40vw;
-          height: 20vh;
-        }
-    }
-    /* fixen dat wlekom blok niet tevoorschijn komt */
-    /* componenten losmaken? */
+  #yellow-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /** media queries**/
+  .yellow {
+    width: 40vw;
+    height: 20vh;
+  }
+}
+/* fixen dat wlekom blok niet tevoorschijn komt */
+/* componenten losmaken? */
+
+/** media queries**/
